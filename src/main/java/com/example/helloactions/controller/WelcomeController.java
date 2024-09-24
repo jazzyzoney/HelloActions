@@ -1,12 +1,12 @@
 package com.example.helloactions.controller;
 
+import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 
-@org.springframework.stereotype.Controller
+@Controller
 public class WelcomeController {
-    @GetMapping("/welcome") {
-        public String welcome() {
-            return "welcome";
-        }
+    @GetMapping("/welcome")
+    public String welcome() {
+        return "welcome";
     }
 }
